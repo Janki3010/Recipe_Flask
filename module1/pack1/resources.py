@@ -57,8 +57,8 @@ class Recipes(Resource):
 
     def post(self):
         data = {
-            "rname": request.form['receipe_name'],
-            "rdec": request.form['receipe_des']
+            "rname": request.form['recipe_name'],
+            "rdec": request.form['recipe_des']
         }
 
         response = requests.post('http://127.0.0.1:8001/receipes', json=data)
