@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+{% block start %}
+<br><br>
+<div class="container">
+
+  <form class="col-6 mx-auto card p-3 shadow-lg" method="post" enctype="multipart/form-data">
+
+      <h2> Update Recipe </h2><hr>
+  <div class="mb-3">
+    <label for="exampleInputEmail1" class="form-label">Recipe Name</label>
+    <input type="text" class="form-control" value="" name="receipe_name">
+  </div>
+  <div class="mb-3">
+      <label for="exampleInputPassword1" class="form-label">Recipe Description</label>
+      <textarea class="form-control"  name="receipe_des"></textarea>
+  </div>
+  <div class="mb-3 form-check">
+    <label for="exampleInputEmail1" class="form-label">Recipe Image</label>
+    <input type="file" class="form-control" value="" name="receipe_image">
+  </div>
+  <button type="submit" class="btn btn-success">Update Recipe</button>
+ </form>
+</div>
+{% endblock %}
