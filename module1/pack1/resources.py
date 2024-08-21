@@ -44,7 +44,7 @@ class Login(Resource):
         if response.status_code == 200:
             return redirect('recipes')
         else:
-            return make_response("sFailed to login")
+            return make_response("Failed to login")
 
 
 class Recipes(Resource):
